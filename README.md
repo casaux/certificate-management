@@ -1,1 +1,1 @@
-# certificate-managment
+# certificate-management
