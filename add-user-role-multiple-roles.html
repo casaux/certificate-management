@@ -10,10 +10,9 @@
       <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
-	  <script type="text/javascript" src="va.js"></script>
+	  <script type="text/javascript" src="roles.js"></script>
       <script type="text/javascript">
          /* page specific js */
-
 
       </script>
    </head>
@@ -67,60 +66,74 @@
                </header>
 			 </div>
 <div class="row">
+    
+    
                	<div class="col-xs-12 col-md-12 col-lg-6">
+                    
+
+                    
+                    
+                    <h2>Change of nominated personnel</h2>
+                    
+                    					<div class="au-form-group">
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Are you adding additional or replacing current personnel?</h3>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex" id="add" value="replace-no">
+                                <label class="au-control-input__text" for="add">Add personnel</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex" id="replace" value="replace-yes">
+                                <label class="au-control-input__text" for="replace">Replace personnel</label>
+                        </div>
+
+                        
 
 
 
-          <h2>Nominated position</h2>
+                    </fieldset>
+                    </div>
 
 
+                    				<div class="casa-section yes casa-hidden">
 
-                                        <div class="au-form-group">
+                                        
+                                                                                <div class="au-form-group">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
-                          <h3 class="au-display-sm">Please select one of the following nominated positions</h3>
+                          <h3 class="au-display-sm">Please select which <span class="role-name">Chief Executive Officer</span> is being replaced</h3>
                           <!-- <span class="au-hint-text">This is some help text</span>-->
                       </legend>
 
                       <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="acc-man" value="acc-manager">
-  <label class="au-control-input__text" for="acc-man">Accountable manager</label>
+  <label class="au-control-input__text" for="acc-man">James Duffy - ARN: 7654321</label>
 </div>
 
                       <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="ceo" value="CEO">
-  <label class="au-control-input__text" for="ceo">Chief Executive Officer</label>
+  <label class="au-control-input__text" for="ceo">Hamish McFadden - ARN: 9876543</label>
 </div>
 
                       <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="cam" value="cont-air-man">
-  <label class="au-control-input__text" for="cam">Continuing Airworthiness Manager</label>
+  <label class="au-control-input__text" for="cam">Ray Petersen - ARN: 4567890</label>
 </div>
                       
                                             <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="hod" value="head-of-des">
-  <label class="au-control-input__text" for="hod">Head of Design</label>
+  <label class="au-control-input__text" for="hod">Denise Redmond - ARN: 3216549</label>
 </div>
                       
                                           <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="hoo" value="head-of-opp">
-  <label class="au-control-input__text" for="hoo">Head of Operations</label>
+  <label class="au-control-input__text" for="hoo">Macy Swan - ARN: 6453128</label>
 </div>
-                      
-                                            <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="rm" value="res-man">
-  <label class="au-control-input__text" for="rm">Responsible Manager</label>
-</div>
-                      
-                                            <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="sm" value="saf-man">
-  <label class="au-control-input__text" for="sm">Safety Manager</label>
-</div>
-                      
-                                            <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="tm" value="trai-man">
-  <label class="au-control-input__text" for="tm">Training Manager</label>
-</div>
+
 
 
 
@@ -128,7 +141,42 @@
 
                   </fieldset>
                   </div>
+                                        
+				</div>
+                    
+							<div class="au-form-group">
+					<div class="au-callout">
 
+
+
+                        <h4><span class="role-name">Chief Executive Officer</span> details</h4>
+
+<p>Changing this role will require assessment by CASA. You will need to do provide the following as part of your application:</p>
+
+<ul>
+    <li>An overview of qualifications and experience relating to the role</li>
+    <li>Information regarding fitness to hold an authorisation</li>
+    <li>Payment for the application ($360)</li>
+</ul>
+
+					</div>
+               	</div>
+
+
+
+                    <h3>New <span class="role-name">Chief Executive Officer</span> details</h3>
+
+
+
+          			<div class="au-form-group">
+                                  <label class="au-label" for="name">User family name</label>
+                                  <input type="text" class="au-text-input au-text-input--block" id="start-time"/>
+                    	</div>
+
+          			<div class="au-form-group">
+                                  <label class="au-label" for="name">User aviation reference number</label>
+                                  <input type="text" class="au-text-input au-text-input--block" id="duration"/>
+                    	</div>
 
 
 
@@ -138,7 +186,7 @@
 				<div class="au-form-group">
 
 								<div id="navigate" "navigate2">
-			    <a href="#" class="au-btn au-btn--primary">Next</a>
+			    <a href="ceo-owner-information.html" class="au-btn au-btn--primary">Next</a>
             </div>
 
 
@@ -166,16 +214,15 @@
             </div>
          </div>
       </main>
-       <script>
-               $("#navigate a"). click(function(){
-				var radioValue = $("input[name='radio-ex1']:checked"). val();
-                         if (radioValue == "saf-man"){
-                        window.location.href="add-user-role-multiple-roles.html#"+radioValue;
-                        } else {
-				        window.location.href="add-user-role.html#"+radioValue;
-                        }
-			     });
-           
+ <script>
+                    		  $("input[name=radio-ex]").on("change", function () {
+        if ($(this).val() === "replace-yes") {
+            $(".yes").removeClass("casa-hidden");
+             } else if($(this).val() === "replace-no") {
+                 $(".yes").addClass("casa-hidden");
+             }
+
+    });
        </script>
    </body>
 </html>
