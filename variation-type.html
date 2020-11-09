@@ -92,14 +92,14 @@
   <label class="au-control-input__text" for="nominated-personnel">Change of nominated personnel</label>
 </div>
 
-                      <div class="au-control-input au-control-input--block">
+                      <!--<div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="location" value="loc">
   <label class="au-control-input__text" for="location">Change of location</label>
-</div>
+</div>-->
 
                       <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="other-changes" value="other">
-  <label class="au-control-input__text" for="other-changes">Other changes to the exposition or related manuals or procedures</label>
+  <label class="au-control-input__text" for="other-changes">Other changes to the location, exposition or related manuals or procedures</label>
 </div>
 
 
@@ -109,11 +109,11 @@
                   </fieldset>
                   </div>
 
-                                                            <div class="au-form-group">
+                                                            <div class="au-form-group radio-selection casa-hidden">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
                           <h3 class="au-display-sm">Which certificate(s) would this change impact?</h3>
-                          <!-- <span class="au-hint-text">This is some help text</span>-->
+                          <span class="au-hint-text">You may select more than one</span>
                       </legend>
 
                       <div class="au-control-input au-control-input--block">
@@ -130,6 +130,34 @@
                                             <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="remote-operators-certificate" value="ReOC">
   <label class="au-control-input__text" for="remote-operators-certificate">ReOC</label>
+</div>
+
+
+
+                  </fieldset>
+                  </div>
+                    
+                                                                                <div class="au-form-group checkbox-selection casa-hidden">
+                  <fieldset class="au-fieldset">
+                      <legend class="au-fieldset__legend">
+                          <h3 class="au-display-sm">Which certificate would this change impact?</h3>
+                          <span class="au-hint-text">Please select one</span>
+                      </legend>
+
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex2" id="Part-141-2" value="141-2">
+  <label class="au-control-input__text" for="Part-141-2">AOC CASR 142 <span class="badge badge-warning">Expiring soon</span></label>
+</div>
+
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex2" id="Part-142-2" value="142-2">
+  <label class="au-control-input__text" for="Part-142-2">CASR Part 142 <span class="badge badge-warning">Expiring soon</span></label>
+</div>
+
+
+                                            <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex2" id="remote-operators-certificate-2" value="ReOC-2">
+  <label class="au-control-input__text" for="remote-operators-certificate-2">ReOC</label>
 </div>
 
 
@@ -174,6 +202,16 @@
          </div>
       </main>
        <script>
+           		  $("input[name=radio-ex1]").on("change", function () {
+        if ($(this).val() === "cert-renewal-summary") {
+            $(".radio-selection").removeClass("casa-hidden");
+            $(".checkbox-selection").addClass("casa-hidden");
+        } else {
+            $(".radio-selection").addClass("casa-hidden");
+            $(".checkbox-selection").removeClass("casa-hidden");
+        }
+    });
+           
                $("#navigate a"). click(function(){
 				var radioValue = $("input[name='radio-ex1']:checked"). val();
 				window.location.href=radioValue+".html";
