@@ -82,13 +82,19 @@
                         </legend>
 
                         <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="radio-ex" id="add" value="replace-no">
+                            <input class="au-control-input__input" type="radio" name="radio-ex" id="add" value="add-yes">
                                 <label class="au-control-input__text" for="add">Add personnel</label>
                         </div>
+                        
                         
                         <div class="au-control-input au-control-input--block">
                             <input class="au-control-input__input" type="radio" name="radio-ex" id="replace" value="replace-yes">
                                 <label class="au-control-input__text" for="replace">Replace personnel</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex" id="remove" value="remove-yes">
+                                <label class="au-control-input__text" for="remove">Remove personnel</label>
                         </div>
 
                         
@@ -110,28 +116,68 @@
                       </legend>
 
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="acc-man" value="acc-manager">
-  <label class="au-control-input__text" for="acc-man">James Duffy - ARN: 7654321</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="james-radio" value="acc-manager">
+  <label class="au-control-input__text" for="james-radio">James Duffy - ARN: 7654321</label>
 </div>
 
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="ceo" value="CEO">
-  <label class="au-control-input__text" for="ceo">Hamish McFadden - ARN: 9876543</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="hamish-radio" value="CEO">
+  <label class="au-control-input__text" for="hamish-radio">Hamish McFadden - ARN: 9876543</label>
 </div>
 
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="cam" value="cont-air-man">
-  <label class="au-control-input__text" for="cam">Ray Petersen - ARN: 4567890</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="ray-radio" value="cont-air-man">
+  <label class="au-control-input__text" for="ray-radio">Ray Petersen - ARN: 4567890</label>
 </div>
                       
                                             <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="hod" value="head-of-des">
-  <label class="au-control-input__text" for="hod">Denise Redmond - ARN: 3216549</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="denise-radio" value="head-of-des">
+  <label class="au-control-input__text" for="denise-radio">Denise Redmond - ARN: 3216549</label>
 </div>
                       
                                           <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="hoo" value="head-of-opp">
-  <label class="au-control-input__text" for="hoo">Macy Swan - ARN: 6453128</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="macy-radio" value="head-of-opp">
+  <label class="au-control-input__text" for="macy-radio">Macy Swan - ARN: 6453128</label>
+</div>
+                      
+                                    </fieldset>
+                  </div>
+                                        
+				</div>
+                    
+                                          				<div class="casa-section remove casa-hidden">
+
+                                        
+                                                                                <div class="au-form-group">
+                  <fieldset class="au-fieldset">
+                      <legend class="au-fieldset__legend">
+                          <h3 class="au-display-sm">Please select which <span class="role-name">Chief Executive Officer</span> is being removed</h3>
+                          <span class="au-hint-text">You may select more than one</span>
+                      </legend>
+
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="james-check" value="">
+  <label class="au-control-input__text" for="james-check">James Duffy - ARN: 7654321</label>
+</div>
+
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="hamish-check" value="">
+  <label class="au-control-input__text" for="hamish-check">Hamish McFadden - ARN: 9876543</label>
+</div>
+
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="ray-check" value="">
+  <label class="au-control-input__text" for="ray-check">Ray Petersen - ARN: 4567890</label>
+</div>
+                      
+                                            <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="denise-check" value="">
+  <label class="au-control-input__text" for="denise-check">Denise Redmond - ARN: 3216549</label>
+</div>
+                      
+                                          <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="macy-check" value="">
+  <label class="au-control-input__text" for="macy-check">Macy Swan - ARN: 6453128</label>
 </div>
 
 
@@ -163,7 +209,7 @@
                	</div>
 
 
-
+<div class= "au-form-group add-input">
                     <h3>New <span class="role-name">Chief Executive Officer</span> details</h3>
 
 
@@ -178,7 +224,7 @@
                                   <input type="text" class="au-text-input au-text-input--block" id="duration"/>
                     	</div>
 
-
+                    </div>
 
 
 
@@ -215,14 +261,24 @@
          </div>
       </main>
  <script>
-                    		  $("input[name=radio-ex]").on("change", function () {
-        if ($(this).val() === "replace-yes") {
-            $(".yes").removeClass("casa-hidden");
-             } else if($(this).val() === "replace-no") {
-                 $(".yes").addClass("casa-hidden");
-             }
 
+     
+     		  $("input[name=radio-ex]").on("change", function () {
+        if ($(this).val() === "add-yes") {
+            $(".yes").addClass("casa-hidden");
+            $(".remove").addClass("casa-hidden");
+            $(".add-input").removeClass("casa-hidden");
+        } else if ($(this).val() === "remove-yes") {
+            $(".yes").addClass("casa-hidden");
+            $(".remove").removeClass("casa-hidden");
+            $(".add-input").addClass("casa-hidden");
+        } else if ($(this).val() === "replace-yes") {
+          $(".yes").removeClass("casa-hidden");
+            $(".remove").addClass("casa-hidden");
+            $(".add-input").removeClass("casa-hidden");
+        }
     });
+     
        </script>
    </body>
 </html>
