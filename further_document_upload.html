@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+
+
+      </script>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+
+
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="dashboard-org.html">myCASA</a></li>
+                      <li>Document upload</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Document upload</h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+                  					<div class="au-form-group">
+                                        <div class="au-callout">					
+					<h4>Application details</h4>
+<p><strong>Application type:</strong> XXXXXX<br>
+<strong>Case Reference:</strong> 1234567890<br>
+<strong>Additional document required:</strong> XXXXXX</p>
+                                            
+                                            <p>After review and assessment, CASA requires you to upload true copies of your XXXXXX before assessment of your application can be completed.</p>
+                                        
+					</div>
+    </div>
+                    
+                    <div class="au-form-group">
+
+                 <!-- <fieldset class="au-fieldset">
+                      <legend class="au-fieldset__legend">
+                          <h3 class="au-display-sm"><label for="select1">Permission document relates to</label></h3>
+                          <span class="au-hint-text">Please select one</span>
+                      </legend>
+
+
+
+                <select id="select1" class="au-select" style="width:50%;">
+                <option value="1">Air Operator’s Certificate</option>
+                <option value="3">Dangerous goods</option>
+                <option>Part 141 or 142</option>
+                <option>Part 171 or 172</option>
+                </select>
+
+              </fieldset>
+
+</div>
+<div class="au-form-group">
+                <fieldset class="au-fieldset">
+                    <legend class="au-fieldset__legend">
+                        <h3 class="au-display-sm"><label for="select1">Type of submission</label></h3>
+                        <span class="au-hint-text">Please select one</span>
+                    </legend>
+
+
+
+                <select id="select1" class="au-select" style="width:50%;">
+                <option value="1">New/Updated document</option>
+                <option value="2">Notification</option>
+                </select>
+
+
+                              </fieldset>
+
+
+
+</div>
+
+
+<div class="au-form-group">
+                <fieldset class="au-fieldset">
+                    <legend class="au-fieldset__legend">
+                        <h3 class="au-display-sm"><label for="select1">CASA region</label></h3>
+                        <span class="au-hint-text">Please select one. If you're not sure please refer to the <a href="https://www.casa.gov.au/node/30711">CASA website</a>.</span>
+                    </legend>
+
+
+
+
+                <select id="select1" class="au-select" style="width:50%;">
+                <option value="1">Eastern Region</option>
+                <option value="2">Southern Region</option>
+                <option>Northern Region</option>
+                <option>Sydney Region</option>
+                <option>Western Region</option>
+                </select>
+
+
+                              </fieldset>
+
+
+
+</div>
+
+<!--
+
+					<div class="au-form-group">
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="role-choice"
+                                       id="authorised-rep" value="application-summary">
+                                <label class="au-control-input__text" for="authorised-rep">Manual of operations update</label>
+                        </div>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="role-choice"
+                                       id="ceo" value="ceo-owner-information">
+                                <label class="au-control-input__text" for="ceo">Safety risk mitigation plan</label>
+                        </div>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="role-choice"
+                                       id="owner" value="ceo-owner-information">
+                                <label class="au-control-input__text" for="owner">CASA form</label>
+                        </div>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="role-choice"
+                                       id="role-a" value="application-summary">
+                                <label class="au-control-input__text" for="role-a">Other document</label>
+                        </div>
+
+
+
+                    </fieldset>
+                    </div>
+
+-->
+
+
+<div class="au-form-group">
+  <h3 class="au-display-sm">Submission description</h3>
+  <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please describe the documents you are submitting and any additional information relevant to your submission.</label>
+        <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+
+        </textarea>
+        <em>Maximum 4000 characters and minimum 50 characters</em>
+
+</div>
+
+
+ <div class="au-form-group">
+			<h3 class="au-display-sm">Upload documents</h3>
+			<br>
+			<button class="au-btn au-btn--secondary" type="button">Choose file</button><br>
+			<span class="au-hint-text">You can upoad up to five files per submission. Accepted file types are PDF documents (.pdf), DOC documents (.doc, .docx) and Excel spreadsheets (.xls, .xslx)</span>
+		 </div>
+
+
+
+
+<div class="au-form-group">
+	<div class="au-callout casa-declaration">
+        <h3>Declaration</h3>
+		<p>
+All statements in this Declaration must be correct. Making a false or misleading statement to CASA is an offence.
+			</p>
+		<p>
+            <label class="au-control-input">
+			<input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="declaration">
+			    <span class="au-control-input__text form-text p-t-0">
+			    I agree and understand the above conditions. </span>
+			</label>
+        </p>
+	</div>
+					</div>
+
+                <!-- standard next button -->
+
+   				      <div class="au-form-group">
+   				           <a class="au-btn" href="document-submitted.html">Submit</a>
+	              </div>
+
+
+                <!-- standard payment button
+
+                <div class="au-form-group">
+                    <a class="au-btn" href="payment.html">Proceed to payment</a>
+                    <p>You will be directed to Westpac for payment</p>
+                </div>
+                -->
+
+                <!-- save and continue
+                <div class="au-form-group">
+                  <hr />
+                  <a href="#" class="au-btn au-btn--secondary">
+                  Save and exit application
+                  </a>
+                </div>
+                -->
+
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+          <div class="footer">
+
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>
