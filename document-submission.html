@@ -55,12 +55,12 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-org.html">myCASA</a></li>
-                      <li>Document submission</li>
+                      <li>Dangerous goods notification</li>
                   </ul>
                </nav>
 			 <div class="casa-section">
                <header class="au-header" role="banner">
-                  <h1 class="break desktop au-header-heading">Document submission</h1>
+                  <h1 class="break desktop au-header-heading">Dangerous goods notification</h1>
                   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
@@ -70,29 +70,59 @@
                	<div class="col-xs-12 col-md-12 col-lg-6">
                   <div class="au-form-group">
 
-                  <fieldset class="au-fieldset">
-                      <legend class="au-fieldset__legend">
-                          <h3 class="au-display-sm"><label for="select1">Permission document relates to</label></h3>
-                          <span class="au-hint-text">Please select one</span>
-                      </legend>
+                    <div class="au-form-group">
+                     <h3 class="au-display-sm">Event number</h3>
+                     <!--label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the CASA reference</label-->
+                         <input type="text" class="au-text-input" />
+                   </div>
+
+                   <div class="au-form-group">
+                    <h3 class="au-display-sm">Date and time of event</h3>
+                    <!--label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the CASA reference</label-->
+                        <input type="text" class="au-text-input" />
+                  </div>
+
+                  <div class="au-form-group">
+                   <h3 class="au-display-sm">Flight number</h3>
+                   <!--label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the CASA reference</label-->
+                       <input type="text" class="au-text-input" />
+                 </div>
+
+                 <div class="au-form-group">
+                  <h3 class="au-display-sm">Aircraft registration</h3>
+                  <!--label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the CASA reference</label-->
+                      <input type="text" class="au-text-input" />
+                </div>
+
+                <div class="au-form-group">
+                 <h3 class="au-display-sm">Departure from</h3>
+                 <!--label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the CASA reference</label-->
+                     <input type="text" class="au-text-input" />
+               </div>
+
+               <div class="au-form-group">
+                <h3 class="au-display-sm">Destination to</h3>
+                <!--label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the CASA reference</label-->
+                    <input type="text" class="au-text-input" />
+              </div>
 
 
+              <div class="au-form-group">
+               <h3 class="au-display-sm">Incident location</h3>
+               <!--label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the CASA reference</label-->
+                   <input type="text" class="au-text-input" />
+             </div>
 
-                <select id="select1" class="au-select" style="width:50%;">
-                  <option>	Form 023 Pt 1 - Change of registration mark	</option>
-    <option>	Form 023 Pt 2 - Change of registration mark	</option>
-    <option>	Form 026 - Cancellation of aircraft registration	</option>
-    <option>	Form 027 Pt 1 - Transfer of Ownership (organisations)	</option>
-    <option>	Form 027 Pt 2 - Transfer of Ownership (organisations)		</option>
-    <option>	Form 028 - Application for Mark Reservation	</option>
-    <option>	Form 029 - Application for Aircraft Registration	</option>
-    <option>	Form 030 - Change of Aircraft Details	</option>
-    <option>	Form 032 - Notice of Appointment/Cancellation of Registered Operator	</option>
-    <option>	Form 099 - Replacement aircraft certificate of registration	</option>
 
-                </select>
+             <div class="au-form-group">
+               <h3 class="au-display-sm">Incident description</h3>
+               <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please describe the documents you are submitting and any additional information relevant to your submission</label>
+                     <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
 
-              </fieldset>
+                     </textarea>
+                     <em>Maximum 4000 characters and minimum 50 characters</em>
+
+             </div>
 
 </div>
 
