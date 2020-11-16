@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="report.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+
+
+      </script>
+       <style type="text/css">
+
+
+      /*autocomplete
+
+      .autocomplete-suggestions {border: none; background: #FFFFFF; overflow: auto;}
+
+      .autocomplete-suggestion{padding:14px;background:#eee;}
+      .autocomplete-suggestion:nth-child(odd){background:#efefef;}*/
+
+      .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+      .autocomplete-suggestion { padding: 4px 5px 2px 16px; white-space: nowrap; overflow: hidden; }
+      .autocomplete-selected { background: #F0F0F0; }
+      .autocomplete-suggestions strong { font-weight: bold;  }
+      .autocomplete-group { padding: 2px 5px; }
+      .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+      </style>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+
+
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="dashboard-org.html">myCASA</a></li>
+                      <li>Dangerous goods occurance report</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Dangerous goods report</h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+                  <div class="au-form-group">
+<h2><span class="reporttype">Incident</span> details</h2>
+
+                      
+                      <div class="au-form-group">
+                                  <label class="au-label" for="name">Operator</label>
+                                  <input type="text" class="au-text-input au-text-input--block" id="operator"/>
+                    	</div>
+                      
+                      
+                      					 <div class="au-form-group casa-inline-form-group">
+                       <fieldset class="au-fieldset">
+                            <legend class="au-fieldset__legend">
+                                <h3 class="au-display-sm">Date of <span class="reporttype">Incident</span></h3>
+                                <span class="au-hint-text">For example, 31 01 2020</span>
+                            </legend>
+                            <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="dd">Date</label>
+                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="MM">Month</label>
+                                <input type="text" class="au-text-input" id="MM" placeholder="MM"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="yyyy">Year</label>
+                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
+                           </div>
+
+
+                        </fieldset>
+                    </div>
+
+
+
+			<div class="au-form-group">
+        <fieldset class="au-fieldset">
+        <legend class="au-fieldset__legend">
+            <h3 class="au-display-sm">Time of incident</h3>
+            <span class="au-hint-text">For example, 19:00 or 07:00</span>
+        </legend>
+
+
+                          <div class="au-form-group casa-inline-form-subgroup">
+                               <label class="au-label" for="hh">Hour</label>
+                               <input type="text" class="au-text-input" id="hh" placeholder="HH"/>
+                          </div>
+                          <div class="au-form-group casa-inline-form-subgroup">
+                               <label class="au-label" for="mm">Minutes</label>
+                               <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
+                          </div>
+                        </fieldset>
+          	</div>
+                      
+                      <div class="au-form-group casa-inline-form-group">
+                       <fieldset class="au-fieldset">
+                            <legend class="au-fieldset__legend">
+                                <h3 class="au-display-sm">Date of flight</h3>
+                                <span class="au-hint-text">For example, 31 01 2020</span>
+                            </legend>
+                            <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="dd">Date</label>
+                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="MM">Month</label>
+                                <input type="text" class="au-text-input" id="MM" placeholder="MM"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="yyyy">Year</label>
+                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
+                           </div>
+
+
+                        </fieldset>
+                    </div>
+                      
+                      
+                    <div class="au-form-group">
+                      <h3 class="au-display-sm">Flight number</h3>
+                      <!--<label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number</label>-->
+                          <input type="text" class="au-text-input" />
+                    </div>
+
+                      
+                      <div class="au-form-group">
+        <label class="au-label" for="departure">Departure airport</label>
+        <div class="autocomplete-suggestions">
+            <input type="text" class="au-text-input au-text-input--block" name="departure" id="autocomplete-ajax"/>
+        </div>
+        </div>
+
+                                            <div class="au-form-group">
+        <label class="au-label" for="destination">Destination airport</label>
+        <div class="autocomplete-suggestions">
+            <input type="text" class="au-text-input au-text-input--block" name="destination" id="autocomplete-ajax-2"/>
+        </div>
+        </div>
+
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mockjax.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="js/courses.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+                   
+<div class="au-form-group">
+                        <label class="au-label" for="name">Aircraft registration</label>
+					
+				<input class="au-text-input au-text-input--block" name="vh-mark" id="vh-mark" type="text" value="VH-">		
+				</div>
+                      
+                      
+                                            <div class="au-form-group">
+                                  <label class="au-label" for="name">Location of incident</label>
+                                  <input type="text" class="au-text-input au-text-input--block" id="location"/>
+                    	</div>
+                      
+                                            <div class="au-form-group">
+                                  <label class="au-label" for="name">Origin of goods</label>
+                                  <input type="text" class="au-text-input au-text-input--block" id="origin"/>
+                    	</div>
+                      
+                      <div class="au-form-group">
+  <h3 class="au-display-sm">Description of the occurance</h3>
+  <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please provide a description of the occurance including details of injury, damage etc.</label>
+        <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+
+        </textarea>
+        <em>Maximum 4000 characters and minimum 50 characters</em>
+
+</div>
+                      
+                      
+                <!-- standard next button -->
+
+   				      <div class="au-form-group">
+   				           <a class="au-btn" href="package-details.html">Next</a>
+	              </div>
+
+
+                <!-- standard payment button
+
+                <div class="au-form-group">
+                    <a class="au-btn" href="payment.html">Proceed to payment</a>
+                    <p>You will be directed to Westpac for payment</p>
+                </div>
+                -->
+
+                <!-- save and continue
+                <div class="au-form-group">
+                  <hr />
+                  <a href="#" class="au-btn au-btn--secondary">
+                  Save and exit application
+                  </a>
+                </div>
+                -->
+
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+          <div class="footer">
+
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>
