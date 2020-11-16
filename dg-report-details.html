@@ -104,7 +104,9 @@
                 <!-- standard next button -->
 
    				      <div class="au-form-group">
-   				           <a class="au-btn" href="incident-details.html">Next</a>
+                          <div id="navigate">
+   				           <a class="au-btn au-btn--primary" href="#">Next</a>
+                          </div>
 	              </div>
 
 
@@ -138,6 +140,12 @@
             </div>
          </div>
       </main>
+          <script>
+          $("#navigate a"). click(function(){
+				var radioValue = $("input[name='radio-ex1']:checked"). val();
+                       window.location.href="incident-details.html#"+radioValue;
+			     });
+          </script>
    </body>
 
 </html>
