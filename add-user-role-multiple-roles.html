@@ -190,7 +190,7 @@
                                         
 				</div>
                     
-							<div class="au-form-group">
+							<div class="au-form-group changing-details">
 					<div class="au-callout">
 
 
@@ -202,6 +202,22 @@
 <ul>
     <li>An overview of qualifications and experience relating to the role</li>
     <li>Information regarding fitness to hold an authorisation</li>
+    <li>Payment for the application ($360)</li>
+</ul>
+
+					</div>
+               	</div>
+                    
+                    							<div class="au-form-group removing-payment casa-hidden">
+					<div class="au-callout">
+
+
+
+                        <h4><span class="role-name">Chief Executive Officer</span> details</h4>
+
+<p>Removing this role will require assessment by CASA. You will need to do provide the following as part of your application:</p>
+
+<ul>
     <li>Payment for the application ($360)</li>
 </ul>
 
@@ -231,8 +247,8 @@
 
 				<div class="au-form-group">
 
-								<div id="navigate" "navigate2">
-			    <a href="ceo-owner-information.html" class="au-btn au-btn--primary">Next</a>
+								<div id="navigate">
+			    <a href="#" class="au-btn au-btn--primary">Next</a>
             </div>
 
 
@@ -268,16 +284,31 @@
             $(".yes").addClass("casa-hidden");
             $(".remove").addClass("casa-hidden");
             $(".add-input").removeClass("casa-hidden");
+            $(".changing-details").removeClass("casa-hidden");
+            $(".removing-payment").addClass("casa-hidden");
         } else if ($(this).val() === "remove-yes") {
             $(".yes").addClass("casa-hidden");
             $(".remove").removeClass("casa-hidden");
+            $(".changing-details").addClass("casa-hidden");
+            $(".removing-payment").removeClass("casa-hidden");
             $(".add-input").addClass("casa-hidden");
         } else if ($(this).val() === "replace-yes") {
           $(".yes").removeClass("casa-hidden");
             $(".remove").addClass("casa-hidden");
             $(".add-input").removeClass("casa-hidden");
+            $(".changing-details").removeClass("casa-hidden");
+            $(".removing-payment").addClass("casa-hidden");
         }
     });
+     
+                    $("#navigate a"). click(function(){
+				var radioValue = $("input[name='radio-ex']:checked"). val();
+                         if (radioValue == "remove-yes"){
+                        window.location.href="application-summary-remove.html";
+                        } else {
+				        window.location.href="ceo-owner-information.html";
+                        }
+			     });
      
        </script>
    </body>
