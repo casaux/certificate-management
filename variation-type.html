@@ -84,9 +84,9 @@
 
                                             <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="certificate-renewal" value="cert-renewal-summary">
-  <label class="au-control-input__text" for="certificate-renewal">No change renewal of certificate(s) (subsequent issue)</label>
+  <label class="au-control-input__text" for="certificate-renewal">No change renewal of certificate (subsequent issue)</label>
 </div>
-                      
+
                       <div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="radio-ex1" id="nominated-personnel" value="position-selection">
   <label class="au-control-input__text" for="nominated-personnel">Change of nominated personnel</label>
@@ -112,23 +112,23 @@
                                                             <div class="au-form-group radio-selection casa-hidden">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
-                          <h3 class="au-display-sm">Which certificate(s) would this change impact?</h3>
-                          <span class="au-hint-text">You may select more than one</span>
+                          <h3 class="au-display-sm">Which certificate would this change impact?</h3>
+                          <span class="au-hint-text">Please select one</span>
                       </legend>
 
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="Part-141" value="141">
+  <input class="au-control-input__input" type="radio" name="radio-ex0" id="Part-141" value="141">
   <label class="au-control-input__text" for="Part-141">AOC CASR 142 <span class="badge badge-warning">Expiring soon</span></label>
 </div>
 
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="Part-142" value="142">
+  <input class="au-control-input__input" type="radio" name="radio-ex0" id="Part-142" value="142">
   <label class="au-control-input__text" for="Part-142">CASR Part 142 <span class="badge badge-warning">Expiring soon</span></label>
 </div>
 
 
                                             <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="checkbox" name="checkbox-ex1" id="remote-operators-certificate" value="ReOC">
+  <input class="au-control-input__input" type="radio" name="radio-ex0" id="remote-operators-certificate" disabled value="ReOC">
   <label class="au-control-input__text" for="remote-operators-certificate">ReOC</label>
 </div>
 
@@ -136,7 +136,7 @@
 
                   </fieldset>
                   </div>
-                    
+
                                                                                 <div class="au-form-group checkbox-selection casa-hidden">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
@@ -211,21 +211,21 @@
             $(".checkbox-selection").removeClass("casa-hidden");
         }
     });
-           
+
                $("#navigate a"). click(function(){
 				var radioValue = $("input[name='radio-ex1']:checked"). val();
 				window.location.href=radioValue+".html";
 			 });
-           
-           $("input:radio"). change(function(){
-				$("#remote-operators-certificate"). prop("disabled", false)
-               
-			 });
-           
-           $("#certificate-renewal"). change(function(){
-				$("#remote-operators-certificate"). prop("disabled", true)
-               
-			 });
+
+          // $("input:radio"). change(function(){
+			//	$("#remote-operators-certificate"). prop("disabled", false)
+
+			 //});
+
+      //     $("#certificate-renewal"). change(function(){
+			//	$("#remote-operators-certificate"). prop("disabled", true)
+
+			// });
        </script>
    </body>
 </html>
